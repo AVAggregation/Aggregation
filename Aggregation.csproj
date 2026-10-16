@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Aggregation</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationConfig Remove="Aggregation.exe.config" />
+    <ApplicationConfig Include="Aggregation.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DeviceInterfaces">
+      <HintPath>..\Ag\bin\Debug\net48\DeviceInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\Ag\bin\Debug\net48\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="DBLogger">
+      <HintPath>..\Ag\bin\Debug\net48\DBLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="Baumer">
+      <HintPath>..\Ag\bin\Debug\net48\Baumer.dll</HintPath>
+    </Reference>
+    <Reference Include="ComputarLens">
+      <HintPath>..\Ag\bin\Debug\net48\ComputarLens.dll</HintPath>
+    </Reference>
+    <Reference Include="AG.Entities">
+      <HintPath>..\Ag\bin\Debug\net48\AG.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="UIKit">
+      <HintPath>..\Ag\bin\Debug\net48\UIKit.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedControl">
+      <HintPath>..\Ag\bin\Debug\net48\PagedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Recognizer2">
+      <HintPath>..\Ag\bin\Debug\net48\Recognizer2.dll</HintPath>
+    </Reference>
+    <Reference Include="L3Service">
+      <HintPath>..\Ag\bin\Debug\net48\L3Service.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Ag\bin\Debug\net48\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+  </ItemGroup>
+</Project>
